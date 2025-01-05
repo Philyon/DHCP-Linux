@@ -1,4 +1,4 @@
-Résumé suite à cette quête que j’ai réussie :
+Procédure que j'ai suivie pour paramétrer le service DHCP sur un Debian, puis effectuer une série de tests sur un client Ubuntu.
 
 # Sur le Debian qui sert de serveur DHCP :
 
