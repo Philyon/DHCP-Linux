@@ -6,9 +6,9 @@ Résumé suite à cette quête que j’ai réussie :
 
 ## ⇒ Le fichier etc/dhcp/dhcpd.conf
 
-![image](https://github.com/user-attachments/assets/29a6589e-80b9-4b0c-88a7-405d120ae3b0)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/29a6589e-80b9-4b0c-88a7-405d120ae3b0" alt=""></p><br><br><br>
 
-![image](https://github.com/user-attachments/assets/6df242aa-f98d-426b-a89b-ad683c9a577c)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/6df242aa-f98d-426b-a89b-ad683c9a577c" alt=""></p><br><br><br>
 
 En haut c’est pour configurer l’adresse du réseau et la plage 
 
@@ -16,13 +16,13 @@ En bas c’est pour réserver une adresse IP et la lier à une adresse MAC
 
 ## ⇒ le fichier etc/network/interface
 
-![image](https://github.com/user-attachments/assets/55f25f3a-81be-4e34-b79e-9dd799d3b10d)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/55f25f3a-81be-4e34-b79e-9dd799d3b10d" alt=""></p><br><br><br>
 
 Permet d’activer une adresse IP statique et un masque pour le serveur DHCP (on supprime “DHCP” écrit par défaut et on ajoute les infos comme ci-dessus)
 
 ## Le fichier etc/default/isc-dhcp-server
 
-![image](https://github.com/user-attachments/assets/f25d38c7-e696-4332-be8d-bf1d91a3cc73)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/f25d38c7-e696-4332-be8d-bf1d91a3cc73" alt=""></p><br><br><br>
 
 On précise juste l’interface réseau de la machine
 
@@ -44,15 +44,15 @@ Pour obtenir la connexion internet qui permet d’installer le paquet, on peut c
 
 ⇒ Une fois le paquet installé, configurer une adresse IP statique, par exemple :
 
-![image](https://github.com/user-attachments/assets/2a3520f5-a305-4a76-97f5-431fa64aa59b)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/2a3520f5-a305-4a76-97f5-431fa64aa59b" alt=""></p><br><br><br>
 
 Et régler le mode d’accès réseau (dans les options de la VM Ubuntu) sur le même paramétrage que le serveur DHCP (ici en Réseau Interne). Enfin on lance la commande ping vers le serveur DHCP pour vérifier qu’il répond bien :
 
-![image](https://github.com/user-attachments/assets/582cc72b-2ec0-4b1f-a8f8-a97464311f14)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/582cc72b-2ec0-4b1f-a8f8-a97464311f14" alt=""></p><br><br><br>
 
 ⇒ A présent, dans les options réseau d’Ubuntu configurer l’interface réseau en DHCP :
 
-![image](https://github.com/user-attachments/assets/30f49fd2-765e-4f98-b477-3f0daa9b9372)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/30f49fd2-765e-4f98-b477-3f0daa9b9372" alt=""></p><br><br><br>
 
 ⇒ Lorsqu’on a configuré une plage d’adresses IP sur le serveur Debian, comme pour Windows on utilise des commandes pour libérer l’adresse IP et demander une nouvelle adresse sur le PC client. Ces commandes sont :
 
@@ -62,19 +62,19 @@ Et régler le mode d’accès réseau (dans les options de la VM Ubuntu) sur le 
 
 Si la machine Ubuntu communique bien avec le serveur Debian DHCP, il se voit attribuer une adresse IP située dans la plage d’adresse configurée dans le Debian. Dans notre cas  c’est la première adresse de la plage, soit 172.10.0.5 :
 
-![image](https://github.com/user-attachments/assets/fd38b0a1-19af-41cb-bd22-b4facc7622ac)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/fd38b0a1-19af-41cb-bd22-b4facc7622ac" alt=""></p><br><br><br>
 
 Dans la suite du challenge, lorsqu’on a rentré l’adresse MAC de l’interface réseau du Ubuntu sur le fichier `dhcpd.conf` du Debian, on refait la même procédure pour appliquer les nouvelles règles (libérer IP / demander IP) 
 
 On a bien l’adresse IPv4 liée à l’adresse MAC définie sur le serveur DHCP (soit  `172.10.0.22`) :
 
-![image](https://github.com/user-attachments/assets/80b67148-010a-4c05-a8c2-b13007b1ad46)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/80b67148-010a-4c05-a8c2-b13007b1ad46" alt=""></p><br><br><br>
 
 ## A noter
 
 Pour supprimer le lien avec l’adresse MAC le fait de commenter ce paramètre dans le fichier etc/dhcp/dhcpd.conf n’a pas suffit :
 
-![image](https://github.com/user-attachments/assets/af078907-fd6b-4ae7-a7af-ca5349c42faf)
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/af078907-fd6b-4ae7-a7af-ca5349c42faf" alt=""></p><br><br><br>
 
 En effet, même si ce paramètre a été désactivé sur le serveur Debian, la machine Ubuntu gardait systématiquement l’adresse 172.10.0.22, que ce soit :
 
