@@ -73,7 +73,7 @@ On a bien l’adresse IPv4 liée à l’adresse MAC définie sur le serveur DHCP
 
 Pour supprimer le lien avec l’adresse MAC le fait de commenter ce paramètre dans le fichier etc/dhcp/dhcpd.conf n’a pas suffit :
 
-<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/af078907-fd6b-4ae7-a7af-ca5349c42faf" alt=""></p><br>
+<br><p align="center"><img width="45%" src="https://github.com/user-attachments/assets/af078907-fd6b-4ae7-a7af-ca5349c42faf" alt=""></p><br>
 
 En effet, même si ce paramètre a été désactivé sur le serveur Debian, la machine Ubuntu gardait systématiquement l’adresse 172.10.0.22, que ce soit :
 
