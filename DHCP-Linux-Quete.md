@@ -6,7 +6,7 @@ Résumé suite à cette quête que j’ai réussie :
 
 ## ⇒ Le fichier etc/dhcp/dhcpd.conf
 
-<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/29a6589e-80b9-4b0c-88a7-405d120ae3b0" alt=""></p><br><br><br>
+<br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/29a6589e-80b9-4b0c-88a7-405d120ae3b0" alt=""></p>
 
 <br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/6df242aa-f98d-426b-a89b-ad683c9a577c" alt=""></p><br><br><br>
 
