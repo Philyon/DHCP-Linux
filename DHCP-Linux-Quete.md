@@ -6,13 +6,12 @@ Résumé suite à cette quête que j’ai réussie :
 
 ## ⇒ Le fichier etc/dhcp/dhcpd.conf
 
+En haut de l'impression d'écran, c’est pour configurer l’adresse du réseau et la plage.
+En bas c’est pour réserver une adresse IP et la lier à une adresse MAC :
+
 <br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/29a6589e-80b9-4b0c-88a7-405d120ae3b0" alt=""></p>
 
 <br><p align="center"><img width="70%" src="https://github.com/user-attachments/assets/6df242aa-f98d-426b-a89b-ad683c9a577c" alt=""></p><br><br><br>
-
-En haut c’est pour configurer l’adresse du réseau et la plage 
-
-En bas c’est pour réserver une adresse IP et la lier à une adresse MAC
 
 ## ⇒ le fichier etc/network/interface
 
